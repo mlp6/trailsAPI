@@ -75,3 +75,8 @@ def main():
             'data':allTrailData
             }
     return result
+
+if __name__ == '__main__':
+    import json
+    trail_status = main()
+    print(json.dumps(trail_status, indent=2))
